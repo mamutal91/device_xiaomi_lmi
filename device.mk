@@ -36,6 +36,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     DeviceParts
 
+# CustomDoze
+PRODUCT_PACKAGES += \
+    CustomDoze
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.sensor.proximity=true \
+    ro.sensor.pickup=xiaomi.sensor.pickup
+
 # Fingerprint
 TARGET_HAS_FOD := true
 
